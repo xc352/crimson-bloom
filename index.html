@@ -1,39 +1,39 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#09070d">
-<title>Crimson Bloom · 暗夜幻境</title>
-<style>
-:root{color-scheme:dark;--pink:#ff477e;--rose:#ff9ab9;--edge:rgba(255,145,183,.26)}
-*{box-sizing:border-box}
-html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#08070d;color:#fff;font-family:Inter,"Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif}
-body{overscroll-behavior:none}
-.scene{position:relative;width:100%;height:100%;height:100dvh;overflow:hidden;isolation:isolate;background:
- radial-gradient(ellipse at 50% 44%,rgba(145,57,101,.29),transparent 44%),
- radial-gradient(ellipse at 15% 12%,rgba(99,91,127,.18),transparent 36%),
- linear-gradient(145deg,#14101a 0%,#0a0810 52%,#170914 100%)}
-.scene:before{content:"";position:absolute;inset:-28%;z-index:0;pointer-events:none;background:conic-gradient(from 20deg at 50% 50%,transparent 0 15%,rgba(255,34,102,.12) 19%,transparent 24% 48%,rgba(194,133,190,.10) 53%,transparent 60%);filter:blur(52px);animation:slow-aurora 30s linear infinite}
-.scene:after{content:"";position:absolute;inset:0;z-index:7;pointer-events:none;background:radial-gradient(ellipse at center,transparent 38%,rgba(0,0,0,.20) 76%,rgba(0,0,0,.58) 130%)}
-.ambient-glow{position:absolute;z-index:0;width:min(90vw,900px);aspect-ratio:1;left:50%;top:48%;transform:translate(-50%,-50%);border-radius:50%;background:rgba(224,55,115,.13);filter:blur(85px);animation:glow-breathe 6s ease-in-out infinite;pointer-events:none}
-.stage-viewport{position:absolute;inset:0;z-index:2;display:grid;place-items:center;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none;outline:none}
-.stage-viewport.dragging{cursor:grabbing}
-.camera{position:absolute;left:50%;top:50%;width:min(92vw,67.5vh);aspect-ratio:3/4;transform:translate3d(-50%,-50%,0) scale(1);transform-origin:center center;will-change:transform;filter:drop-shadow(0 22px 54px rgba(0,0,0,.6));}
-.artwork{position:absolute;inset:0;overflow:visible;isolation:isolate;border-radius:3px}
-.base-image{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:fill;pointer-events:none;user-select:none;-webkit-user-drag:none}
-.motion-layer{position:absolute;display:block;height:auto;object-fit:fill;pointer-events:none;user-select:none;-webkit-user-drag:none;will-change:transform,filter;mix-blend-mode:normal}
-.red-hair{transform-origin:49% 94%;animation:red-breeze 5.2s ease-in-out infinite;filter:url(#hairWave)}
-.white-hair{transform-origin:50% 88%;animation:white-breeze 4.7s ease-in-out infinite -1.6s;filter:url(#hairWave)}
-.cloth-left{transform-origin:20% 95%;animation:cloth-breeze 6.1s ease-in-out infinite -2.2s}
-.cloth-right{transform-origin:70% 94%;animation:cloth-breeze 5.6s ease-in-out infinite -.8s}
-.artwork:after{content:"";position:absolute;inset:-1px;pointer-events:none;box-shadow:inset 0 0 35px rgba(255,105,154,.12),0 0 38px rgba(255,35,105,.16);opacity:.72}
-.orbits{position:absolute;inset:-16%;width:132%;height:132%;overflow:visible;pointer-events:none;filter:drop-shadow(0 0 7px rgba(255,42,105,.72));}
-.orbit-line{fill:none;stroke-linecap:round;stroke-dasharray:16 20 5 30;animation:orbit-dash 18s linear infinite}
-.orbit-line.a{stroke:rgba(255,46,105,.52);stroke-width:1.5}
-.orbit-line.b{stroke:rgba(255,160,193,.36);stroke-width:1;stroke-dasharray:7 17;animation-duration:26s;animation-direction:reverse}
-.orbit-line.c{stroke:rgba(205,77,125,.30);stroke-width:2;stroke-dasharray:2 23;animation-duration:33s}
-#particles,#feathers{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
+<！doctype 超文本标记语言>
+<超文本标记语言 朗="zh-CN">
+<头>
+<元 字符集="utf-8">
+<元 姓名="视口" 内容="宽度=设备宽度，初始比例=1，最大比例=1，用户可缩放=无，视口适合=覆盖">
+<元 姓名="主题-颜色" 内容="#09070d">
+<标题>深红花·暗夜幻境</标题>
+<风格>
+:根{配色方案:黑暗的;--粉红色:#ff477e；--玫瑰色：#ff9ab9；--edge:rgba(255，145，183，.26)}
+*{箱体尺寸:边框框}
+超文本标记语言，身体{边缘：0；宽度：100%；高度：100%；溢出：隐藏；背景：#08070d；color：#fff；font-family:Inter，"Noto sans SC"，system-ui，-apple-system，"Segoe UI"，sans-serif}
+身体{过卷行为:无}
+.场景{位置:相对的;宽度:100%；高度：100%；高度：100dvh；overflow:hidden;isolation:isolate;background:
+ 径向梯度(背景 在 50% 44%，RGBA(145，57,101,.29),transparent 44%),
+ 径向梯度(椭圆 在 15% 12%,RGBA(99,91,127,.18),transparent 36%),
+线性梯度(145deg,#14101a0%，#0a081052%，#170914100%)}
+.场景：在……之前{内容：""；位置：绝对的；插入：-28%；z索引：0；指针事件：无；背景：圆锥梯度(从20度，50%50%，透明0 15%,rgba(255,34,102,.12)19%，透明24%48%,rgba(194,133,190,.10)53%，透明60%)；滤镜：模糊(52px)；动画：慢速极光30s线性无限}
+.场景：在……之后{内容：""；位置：绝对的；内插：0；z索引：7；指针事件：无；背景：径向梯度(椭圆在中心，透明38%,rgba(0,0,0,.20) 76%,rgba(0,0,0,.58)130%)}
+.环境辉光{位置：绝对的；Z指数:0;width:min(90vw,900px);aspect-ratio:1;left:50%;top:48%;transform:translate(-50%,-50%);border-radius:50%;background:rgba(224,55,115,.13);filter:blur(85px);animation:glow-breathe6s轻松进出无限；指针事件：无}
+.阶段-视口{位置：绝对的；插图：0；z索引：2；显示：网格；放置项目：居中；触摸动作：无；光标：抓取；用户选择：无；-webkit用户选择：无；概要：无}阶段-视口{位置:绝对的;插图：0;z-指数：2;显示：grid;place-items:center;touch-action:无;cursor:grab;user-select:无;-webkit-user-select:无;outline:无}
+.阶段-视口.dragging{游标：抓取}
+。摄像头{位置：绝对；左侧：50%；顶部：50%；宽度：最小(92vw，67。5vh)；纵横比：3/4；转换：translate3d(-50%，-50%，0)比例(1)；变换原点：居中；将更改：变换；滤镜：投影(022px54px RGBA(0,0,0,.6));}
+图片{位置:绝对;插入:0;溢出:可见;隔离:隔离;边缘半径:3px}
+.base-image{位置:绝对的;inset:0;宽度:100%;高度:100%;display:block;object-fit:fill;pointer-events:无;user-select:无;-webkit-user-drag:无}
+.motion-layer{位置:绝对的;display:block;高度:auto;object-fit:fill;pointer-events:无;user-select:无;-webkit-user-drag:无;will-change:transform,filter;mix-blend-mode:normal}
+.red-hair{变换原点：49%94%；动画：red-breeze5.2s轻松进出无限；滤镜：url(#hairWave)}
+.White-hair{变换原点：50%88%；动画：白风4.7s轻松进出无限-1.6s；滤镜：url(#hairWave)}
+.cloth-left{变换原点：20%95%；动画：Cloth-breeze6.1s轻松进出无限-2.2s}
+.cloth-right{变换原点：70%94%；动画：Cloth-Breeze5.6s轻松进出无限-.8s}
+。图稿：在{内容：""之后；位置：绝对；插图：-1px；指针事件：无；框阴影：插图0035px RGBA(255,105,154,.12),0038px RGBA(255，35，105，.16)；不透明度：.72}
+。环绕{位置:absolute；插入：-16%；宽度：132%；高度：132%；溢出：可见；指针事件：无；滤镜：投影(007px RGBA(255,42,105,.72));}
+。动态观察线{fill:none；stroke-linecap:round；stroke-dashray:1620530；动画：动态观察虚线18s线性无限}
+。轨道线。a{stroke:RGBA(255，46，105，.52)；stroke-宽度:1.5}
+。orbit-line.B{stroke:RGBA(255，160，193，.36)；stroke-宽度:1；stroke-dashray:717；动画持续时间：26s；动画方向：反转}
+。orbit-line.C{stroke:RGBA(205，77，125，.30)；stroke-宽度:2；stroke-dashray:223；动画持续时间：33s}
+#粒子，#羽毛{位置：绝对；插入：0；宽度：100%；高度：100%；z索引：4；指针事件：无}
 .top-mark{position:absolute;z-index:8;top:max(17px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);text-align:center;pointer-events:none;text-shadow:0 0 20px rgba(255,60,120,.5);white-space:nowrap}
 .top-mark b{font-size:clamp(11px,1.4vw,15px);font-weight:500;letter-spacing:.42em}
 .top-mark small{display:block;margin-top:5px;font-size:8px;letter-spacing:.34em;color:rgba(255,220,235,.52)}
